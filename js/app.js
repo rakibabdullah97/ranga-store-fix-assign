@@ -13,8 +13,8 @@ const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
     const image = product.images;
-    const title =product.title;
-    const finalTitle = title.slice(0,20)
+    const title = product.title;
+    const finalTitle = title.slice(0, 20)
     const div = document.createElement("div");
     div.classList.add("product");
     div.innerHTML = `
@@ -86,6 +86,6 @@ const updateTotal = () => {
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
-  document.getElementById("total").innerText = grandTotal.toFixed(2) ;
+  document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
 
