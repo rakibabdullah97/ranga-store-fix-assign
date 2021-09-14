@@ -18,7 +18,7 @@ const showProducts = (products) => {
     const div = document.createElement("div");
     div.classList.add("product");
     div.innerHTML = `
-    <div class="card single-product " style="width: 28rem;">
+    <div class="card single-product " style="width: 28rem">
         <img src="${product.image}" class="card-img-top product-image" alt="...">
      <div class="card-body">
        <h5 class="card-title">${finalTitle}</h5>
